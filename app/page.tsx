@@ -61,15 +61,15 @@ export default function Dashboard() {
     <div className="min-h-screen bg-slate-50">
       <Sidebar />
 
-      <div className="ml-64">
+      <div className="md:ml-64 transition-all duration-300">
         {/* Header */}
         <motion.header
-          className="bg-white border-b border-slate-200 sticky top-0 z-40 backdrop-blur-md bg-opacity-95"
+          className="bg-white border-b border-slate-200 sticky top-0 z-30 backdrop-blur-md bg-opacity-95"
           initial={{ y: -100 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="px-8 py-6 flex items-center justify-between">
+          <div className="px-4 md:px-8 py-6 flex items-center justify-between">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -80,8 +80,8 @@ export default function Dashboard() {
                   <BarChart3 className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
-                  <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
-                  <p className="text-sm text-muted-foreground">Pharmaceutical Operations Control Center</p>
+                  <h1 className="text-2xl md:text-3xl font-bold text-foreground">Dashboard</h1>
+                  <p className="text-sm text-muted-foreground hidden sm:block">Pharmaceutical Operations Control Center</p>
                 </div>
               </div>
             </motion.div>
@@ -92,12 +92,12 @@ export default function Dashboard() {
               className="flex items-center gap-3 px-4 py-2 bg-amber-50 border border-amber-200 rounded-lg"
             >
               <AlertCircle className="w-5 h-5 text-amber-600" />
-              <span className="text-sm font-medium text-amber-900">3 Active Alerts</span>
+              <span className="text-sm font-medium text-amber-900 hidden sm:inline">3 Active Alerts</span>
             </motion.div>
           </div>
         </motion.header>
 
-        <main className="p-8 space-y-8">
+        <main className="p-4 md:p-8 space-y-8">
           {/* KPI Cards */}
           <section>
             <motion.h2
