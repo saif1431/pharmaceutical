@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Activity, Package, Boxes, Cog, CheckCircle, Award, Settings, Menu, X } from 'lucide-react'
+import { Activity, Package, Boxes, Cog, CheckCircle, Award, Settings, Menu, X, Truck, Handshake, DollarSign, Building2 } from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'
 import { useIsMobile } from '@/hooks/use-mobile'
@@ -18,6 +18,11 @@ const navItems = [
     name: 'Procurement',
     href: '/procurement',
     icon: Package,
+  },
+  {
+    name: 'Supply Chain',
+    href: '/supply-chain',
+    icon: Truck,
   },
   {
     name: 'Inventory',
@@ -38,6 +43,21 @@ const navItems = [
     name: 'Quality Assurance',
     href: '/quality-assurance',
     icon: Award,
+  },
+  {
+    name: 'Sales & Marketing',
+    href: '/sales',
+    icon: Handshake,
+  },
+  {
+    name: 'Finance & Admin',
+    href: '/finance',
+    icon: DollarSign,
+  },
+  {
+    name: 'Management',
+    href: '/management',
+    icon: Building2,
   },
 ]
 
