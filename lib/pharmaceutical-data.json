@@ -1,0 +1,68 @@
+{
+  "dashboard": {
+    "metadata": {
+      "lastUpdated": "2024-11-18T14:35:00Z",
+      "dataFreshness": "real-time",
+      "environment": "production"
+    },
+    "procurement": {
+      "totalOrders": 284,
+      "approved": 256,
+      "pending": 12,
+      "rejected": 3,
+      "onTimeRate": 0.94,
+      "suppliers": [
+        {
+          "id": "SUP-001",
+          "name": "Supplier A",
+          "performance": 94,
+          "onTimeDelivery": 0.96,
+          "qualityScore": 0.92
+        },
+        {
+          "id": "SUP-002",
+          "name": "Supplier B",
+          "performance": 88,
+          "onTimeDelivery": 0.87,
+          "qualityScore": 0.89
+        },
+        {
+          "id": "SUP-003",
+          "name": "Supplier C",
+          "performance": 91,
+          "onTimeDelivery": 0.93,
+          "qualityScore": 0.89
+        },
+        {
+          "id": "SUP-004",
+          "name": "Supplier D",
+          "performance": 86,
+          "onTimeDelivery": 0.84,
+          "qualityScore": 0.88
+        }
+      ]
+    },
+    "inventory": {
+      "totalSkus": 847,
+      "lowStockItems": 12,
+      "criticalItems": 2,
+      "warehouses": [
+        { "id": "WH-001", "name": "Main", "utilization": 0.78, "capacity": 50000 },
+        { "id": "WH-002", "name": "East", "utilization": 0.65, "capacity": 35000 },
+        { "id": "WH-003", "name": "West", "utilization": 0.82, "capacity": 40000 },
+        { "id": "WH-004", "name": "North", "utilization": 0.71, "capacity": 30000 }
+      ]
+    },
+    "quality": {
+      "approvedBatches": 4847,
+      "rejectedBatches": 89,
+      "passRate": 0.982,
+      "defectCategories": [
+        { "category": "Color Variation", "count": 12 },
+        { "category": "Size Deviation", "count": 8 },
+        { "category": "Packaging", "count": 5 },
+        { "category": "Labeling", "count": 3 }
+      ]
+    }
+  }
+}
