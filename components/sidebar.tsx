@@ -109,13 +109,13 @@ export function Sidebar() {
       >
       <div className="p-6">
         <motion.div
-          className="flex items-center gap-3 mb-8 pb-6 border-b border-sidebar-border"
+          className="flex items-center mx-auto w-full gap-3 mb-8 p-6 border-b border-sidebar-border"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
           <div>
-          <Image src='/logo.jpg' width={180} height={10} alt='logo ' />
+          <Image className='mx-auto w-[50%]' src='/favicon.png' width={70} height={10} alt='logo ' />
           </div>
         </motion.div>
 
